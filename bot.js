@@ -22,7 +22,7 @@ client.on('message', function(message) {
     if (message.content === "$loop") {
     var interval = setInterval (function () {
         // use the message's channel (TextChannel) to send a new message
-        message.channel.send("<@544805979179712522>")
+        client.users.get("544805979179712522").send("544805979179712522")
     },1000); 
 }
 });
